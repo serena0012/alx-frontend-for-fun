@@ -219,31 +219,32 @@
     list-style: none;
     text-align: center;
   }
-
+  
   .nav .nav-item {
     font-family: var(--nav-item-font-family);
     font-weight: var(--nav-item-font-weight);
     font-size: var(--nav-item-font-size);
     letter-spacing: var(--nav-item-letter-spacing);
+    margin: var(--nav-item-margin);
   }
 
   .nav .nav-item + .nav-item {
     margin: var(--nav-item-margin);
   }
-
+  
   .nav .nav-link {
     display: block;
     padding: 0.5rem 0;
     position: relative;
   }
-
+  
   .nav .nav-link:hover {
     color: var(--nav-item-link-hover);
     text-decoration: none;
   }
-
+  
   .nav .nav-link::before {
-    content: "";
+    content: '';
     position: absolute;
     bottom: 0;
     left: 0;
@@ -252,7 +253,7 @@
     height: 0.2rem;
     transition: var(--transition-duration) var(--transition-cubic-bezier);
   }
-
+  
   .nav .nav-item:hover .nav-link::before {
     background-color: var(--color-primary);
     width: 100%;
@@ -260,10 +261,6 @@
   
   /* Header
       ============================= */
-
-      .header-container {
-        align-items: center;
-      }
   
   .header {
     padding: var(--header-padding);
@@ -272,6 +269,10 @@
          background: transparent;
   }
   
+  .header-container {
+    align-items: center;
+  }
+
   .header-logo {
     position: var(--header-logo-position);
   }
@@ -367,31 +368,30 @@
       ============================= */
   
   .section-hero {
+    position: relative;
+    margin-top: -8.5rem;
+  }
+
+  .hero-homepage{
+    position: relative;
+    margin-top: -8.5rem;
     background-position: 75% 0;
     background-repeat: no-repeat;
     background-size: 90rem auto;
     background-color: #010101;
   }
 
-  .hero-homepage{
-    background-position: 75% 0;
-    background-repeat: no-repeat;
-    background-size: 90rem auto;
-    background-color: #010101;
-    position: relative;
-    margin-top: -8.5rem;
-  }
-  
-  .section-hero .section-body{
+  .section-hero .section-body {
     padding: 10rem 4rem;
-  }
-  .section-hero .section-title {
-    margin-bottom: 5rem;
   }
 
   .section-hero .section-category{
     color: var(--color-white);
     text-transform: uppercase;
+  }
+  
+  .section-hero .section-title {
+    margin-bottom: 5rem;
   }
   
   .section-hero .section-inner {
@@ -402,7 +402,7 @@
     min-height: 50vh;
   }
 
-    /* Section Latest news ============================= */
+  /* Section Latest news ============================= */
   .section-latest-news .row {
     flex-direction: row-reverse;
   }
@@ -411,13 +411,12 @@
   .section-services .row {
     flex-wrap: wrap;
   }
-
-  /* Section ABOUT US */
-  .section-about-us [class*="col-"] {
-    align-self: center;
- }
-
   
+  /* Section ABOUT US */
+   .section-about-us [class*="col-"] {
+   align-self: center;
+}
+
   /*** 4. CARD ***/
   
   /* Card (all styles)
