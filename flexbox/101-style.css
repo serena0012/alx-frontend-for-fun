@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    align-content: space-between;
+}
+
+.box1{
+    background-color: green;
+    height: 40px;
+    width: 80px;
+}
+
+.box2{
+    background-color: blue;
+}
+
+.box3{
+    background-color: rgb(37, 88, 131);
+}
+
+.box4{
+    background-color: rgb(220, 20, 227);
+}
+
+.box5{
+    background-color: rgb(242, 79, 64);
+}
